@@ -1,0 +1,11 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: bkm-server
+  jpa:
+    hibernate:
+      ddl-auto: update
+  jwt:
+    header: Authorization
+    key: GxyNXiVHrDJx/fdTjH+G6/ZY63LrpRXh+ZsQHKctVvmym32eTmw0zySjzn5xuy0GKq1y0Yr8Z3VvMeEUzb7Op2bnPd/dqD+pklDP1fO6QCOd35jLGVcRmSFfzIWCkH+aAeqgl5MNk1q4lvWV2uJrrfnWpt/XN9B5D4PUctFR6rlijGopVf4jUzXXppCrH3d5wVVR3IP9kvFIOpaqxXmX29WpGJrZ/ZjiBNK68VfLR2zVaSDuZqwC2qQAVITN4KfPCtXQ/vn11MSeqNNpKRvh8Baha0a9PIQhcUrlULGPgG07HWrlWW95IHd6seOXJJ5/qyOT5TE8BiJkPaxs9+Nf+A==
