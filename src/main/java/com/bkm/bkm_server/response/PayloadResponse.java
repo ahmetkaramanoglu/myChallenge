@@ -8,5 +8,5 @@ import lombok.Data;
 public class PayloadResponse {
     private String clientChallengeId;
     private String serverChallengeId;
-    private int [] smsProtocol;
+    private Integer [] smsProtocol;
 }

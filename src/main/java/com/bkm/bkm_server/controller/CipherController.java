@@ -2,10 +2,12 @@ package com.bkm.bkm_server.controller;
 
 import com.bkm.bkm_server.request.EncryptRequest;
 import com.bkm.bkm_server.request.PublicKeyRequest;
+import com.bkm.bkm_server.request.SmsRequest;
 import com.bkm.bkm_server.request.UserLoginRequest;
 import com.bkm.bkm_server.response.CipherResponse;
 import com.bkm.bkm_server.response.EncryptResponse;
 import com.bkm.bkm_server.response.LoginResponse;
+import com.bkm.bkm_server.response.SmsResponse;
 import com.bkm.bkm_server.service.CipherService;
 import lombok.AllArgsConstructor;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -32,6 +34,10 @@ public class CipherController {
     @PostMapping("login-request")
     public LoginResponse loginRequestTest(@RequestBody UserLoginRequest request) throws Exception {
         return new LoginResponse(cipherService.decryptLoginRequest(request));
+    }
+    @PostMapping("sms-request")
+    public SmsResponse smsRequestTest(@RequestBody SmsRequest request) throws Exception {
+        return new SmsResponse(cipherService.decryptSmsRequest(request));
     }
 
 }
